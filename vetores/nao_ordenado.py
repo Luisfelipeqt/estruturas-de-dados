@@ -28,7 +28,8 @@ class VetorNaoOrdenado:
     # O(n)
     def pesquisar(self, valor):
         for i in range(self.ultima_posicao + 1): # Irá percorrer todo o VETOR
-            if valor == self.valores[i]: # Se o valor for igual a algum velor dentro do VETOR 
+            if valor == self.valores[i]: # Se o valor for igual a algum velor dentro do VETOR
+                print(i)
                 return i # Retorna o valor do parametro caso esse valor se encontre no VETOR
         return -1 # Retorna -1 se o elemento não existir no vetor
     
@@ -77,3 +78,4 @@ print("---------------------------")
 print("---------------------------")
 vetor.excluir(3)
 vetor.imprime()
+vetor.pesquisar(10)
